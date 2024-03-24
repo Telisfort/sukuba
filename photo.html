@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prise de Photos et Annotation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Prise de Photos et Annotation</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Prendre une Photo</h2>
+            <input type="file" accept="image/*" capture="camera" id="photo-input">
+            <button id="take-photo">Prendre une photo</button>
+        </section>
+
+        <section>
+            <h2>Ajouter une Annotation</h2>
+            <textarea id="annotation" placeholder="Ajouter une annotation"></textarea>
+            <button id="save-photo">Enregistrer</button>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+    <script>
+        document.getElementById("take-photo").addEventListener("click", function() {
+            // Lorsque le bouton "Prendre une photo" est cliqué
+            // Code pour capturer une photo
+            // Vous pouvez utiliser une API comme MediaDevices.getUserMedia() pour accéder à la caméra
+        });
+
+        document.getElementById("save-photo").addEventListener("click", function() {
+            // Lorsque le bouton "Enregistrer" est cliqué
+            var annotationText = document.getElementById("annotation").value;
+            // Code pour enregistrer la photo avec l'annotation
+            // Par exemple, vous pouvez envoyer les données au serveur via une requête AJAX
+        });
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcul de Superficie par GPS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Calcul de Superficie par GPS</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Délimiter votre Champ</h2>
+            <p>Utilisez le bouton ci-dessous pour démarrer la délimitation de votre champ en marchant autour de celui-ci.</p>
+            <button id="start-gps">Démarrer GPS</button>
+        </section>
+
+        <section>
+            <h2>Résultats</h2>
+            <div id="map-container">
+                <!-- La carte affichera la délimitation du champ -->
+            </div>
+            <p id="area">Superficie : <span id="area-value">0</span> m²</p>
+            <button id="save-gps">Enregistrer</button>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+    <script>
+        document.getElementById("start-gps").addEventListener("click", function() {
+            // Lorsque le bouton "Démarrer GPS" est cliqué
+            // Code pour démarrer le suivi GPS
+            // Vous pouvez utiliser l'API de géolocalisation pour obtenir les coordonnées GPS
+        });
+
+        document.getElementById("save-gps").addEventListener("click", function() {
+            // Lorsque le bouton "Enregistrer" est cliqué
+            // Code pour enregistrer les données GPS et la superficie
+            // Par exemple, vous pouvez envoyer les données au serveur via une requête AJAX
+        });
+    </script>
+</body>
+</html>
+
+
